@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Bebas+Neue&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link-style {
+  @apply font-robotoFlex text-[12px] font-medium text-[#282828] no-underline hover:text-blue-500 sm:text-base;
+}
+
+.selected {
+  @apply border-b-[1px] border-[#0147FF] font-bold text-[#0147FF];
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+html {
+  width: 100vw;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #212121;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  transition: 1s;
+  overflow-y: overlay;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
